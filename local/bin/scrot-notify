@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Pasta de destino
+DIR=~/Imagens
+mkdir -p "$DIR"
+FILE="$DIR/$(date +%Y-%m-%d-%H%M%S).png"
+
+# Tipo de captura
+case "$1" in
+  f) scrot "$FILE" ;;      # tela inteira
+  w) scrot -u "$FILE" ;;   # janela ativa
+  a) scrot -s "$FILE" ;;   # seleção de área
+  *) echo "Use f (full), w (window) ou a (area)" ;;
+esac
+
+# Notificação
+if [ -f "$FILE" ]; then
+  notify-send "Screenshot" "$FILE"
+fi
+
