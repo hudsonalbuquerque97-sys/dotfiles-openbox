@@ -6,7 +6,7 @@ Configurações pessoais do Openbox para meu setup no linux mint.
 - **Openbox**:`rc.xml`, `menu.xml` e autostart.
 - **conky arquivo de configuração personalizado
 - **polybar arquivo de configuração personalizada
-- **scrot-notify
+- **script scrot-notify
 
 ## Requisitos para usar esses dotfiles ## Dependências
 
@@ -27,20 +27,20 @@ sudo cp obmenu-generator /usr/bin/ \
 sudo chmod +x /usr/bin/obmenu-generator \
 mkdir -p ~/.config/obmenu-generator \
 cp schema.pl ~/.config/obmenu-generator/ \
-obmenu-generator -p -i \
+obmenu-generator -p -i 
 
 ## Clonando os dotfiles do openbox
 # Clona o repositório de configuração diretamente na pasta dotfiles-openbox dentro do HOME
 git clone https://github.com/hudsonalbuquerque97-sys/dotfiles-openbox.git \
-# Cria as pastas se não existirem \
-mkdir -p ~/.config/openbox ~/.config/conky ~/.config/polybar ~/.local/bin \
-# Copia as configurações \
+# Cria as pastas se não existirem 
+mkdir -p ~/.config/openbox ~/.config/conky ~/.config/polybar ~/.local/bin 
+# Copia as configurações 
 cp -r "$HOME/dotfiles-openbox/.config/openbox/"* ~/.config/openbox/ \
 cp -r "$HOME/dotfiles-openbox/.config/conky/"*   ~/.config/conky/ \
-cp -r "$HOME/dotfiles-openbox/.config/polybar/"* ~/.config/polybar/ \
-# Copia o script scrot-notify \
+cp -r "$HOME/dotfiles-openbox/.config/polybar/"* ~/.config/polybar/ 
+# Copia o script scrot-notify 
 cp "$HOME/dotfiles-openbox/.local/bin/scrot-notify" ~/.local/bin/ \
-chmod +x ~/.local/bin/scrot-notify \
+chmod +x ~/.local/bin/scrot-notify 
 
 ## Instalação completa ##
 
