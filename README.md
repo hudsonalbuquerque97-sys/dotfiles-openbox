@@ -31,7 +31,7 @@ obmenu-generator -p -i
 
 ## Clonando os dotfiles do openbox
 # Clona o repositório de configuração diretamente na pasta dotfiles-openbox dentro do HOME
-git clone https://github.com/hudsonalbuquerque97-sys/dotfiles-openbox.git \
+git clone https://github.com/hudsonalbuquerque97-sys/dotfiles-openbox.git 
 # Cria as pastas se não existirem 
 mkdir -p ~/.config/openbox ~/.config/conky ~/.config/polybar ~/.local/bin 
 # Copia as configurações 
