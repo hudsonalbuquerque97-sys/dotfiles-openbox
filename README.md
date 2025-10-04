@@ -44,6 +44,6 @@ chmod +x ~/.local/bin/scrot-notify
 
 ## Instalação completa ##
 
+Screenshot 
 
-
-
+https://raw.githubusercontent.com/hudsonalbuquerque97-sys/dotfiles-openbox/refs/heads/master/2025-09-04-161217.png
